@@ -4,7 +4,7 @@
     list-style-type: none;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Tajawal", sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -192,6 +192,9 @@ button[type="submit"]:hover .loader{
     font-weight: bold;
     color: #1877F2;
     animation: fadeIn 1s ease-in-out;
+    width: 1em;
+    text-align: center; 
+    display: inline-block; 
 }
 
 .label {
