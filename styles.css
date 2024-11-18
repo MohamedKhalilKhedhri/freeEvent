@@ -93,6 +93,7 @@ label {
 /* Input and Select */
 input[type="text"],
 input[type="email"],
+input[type="number"],
 select {
     width: 100%;
     padding: 12px;
@@ -237,7 +238,7 @@ button[type="submit"]:hover .loader{
 .card-container {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
     gap: 1rem;
    
 }
@@ -279,7 +280,7 @@ button[type="submit"]:hover .loader{
 
 /* ctaContainer */
 .ctaContainer{
-    width: 100%; display: flex; justify-content: center; padding:2rem
+    width: 100%; display: flex; justify-content: center; padding:2rem;
 }
 .cta{
     cursor: pointer; font-weight: bold; font-size: large; background-color: #1877F2; width:100%; max-width:500px; text-align: center; padding:15px 0; color:white; outline:none; border:none; transition: 0.1s ease-out;
@@ -345,7 +346,7 @@ button[type="submit"]:hover .loader{
 
     .card-container {
         
-        grid-template-columns: repeat(5, minmax(250px, 1fr));
+        grid-template-columns: repeat(4, minmax(250px, 1fr));
         max-width: 1440px;
        
     }
@@ -363,6 +364,10 @@ button[type="submit"]:hover .loader{
     }
     .workshopIntro{
         padding:0 4rem;
+    }
+    .card-container {
+        margin-top: 40px;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -387,10 +392,7 @@ button[type="submit"]:hover .loader{
         font-size: 2rem;
     }
 
-    .card-container {
-        margin-top: 40px;
-        grid-template-columns: 1fr 1fr;
-    }
+   
 
    
 
@@ -408,6 +410,7 @@ button[type="submit"]:hover .loader{
 
     input[type="text"],
     input[type="email"],
+    input[type="number"],
     select,
     button[type="submit"] {
         padding: 10px;

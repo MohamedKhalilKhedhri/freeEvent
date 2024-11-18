@@ -89,9 +89,10 @@ document.addEventListener("DOMContentLoaded", () => {
             isValid = false;
         }
 
-        // Validate Phone number for Kuwait (+965)
+       
+        // Validate Phone number for Kuwait (8 digits)
         if (phoneInput.value.trim()) {
-            const phonePattern = /^[+]965\d{8}$/;
+            const phonePattern = /^\d{8}$/; // Matches exactly 8 digits
             if (phonePattern.test(phoneInput.value)) {
                 phoneError.style.display = 'none';
                 phoneErrorFormat.style.display = 'none';
@@ -105,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
             phoneErrorFormat.style.display = 'none';
             isValid = false;
         }
+
 
         if (isValid) {
             const formData = new FormData(form);
