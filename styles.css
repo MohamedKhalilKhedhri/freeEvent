@@ -37,7 +37,8 @@ html{
 }
 
 .heroHeadline {
-    font-size: clamp(1.5rem, 4vw + 1rem, 4rem);  
+    font-size: clamp(1.5rem, 4vw + 1rem, 4rem); 
+    color: #088F8F; 
 }
 
 .heroContent {
@@ -120,7 +121,7 @@ input::placeholder {
 button[type="submit"] {
     width: 100%;
     padding: 14px;
-    background:#1877F2;;
+    background:#088F8F;;
     color: white;
     border: none;
     border-radius: 5px;
@@ -131,7 +132,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #1877F2ed;
+    background: #088F8Fed;
 }
 
 #submit-text {
@@ -142,24 +143,24 @@ button[type="submit"]:hover {
 .loader {
     width: 25px;
     aspect-ratio: 4;
-    background: radial-gradient(circle closest-side, white 90%, #1877F2) 0/calc(100%/3) 100% space;
+    background: radial-gradient(circle closest-side, white 90%, #088F8F) 0/calc(100%/3) 100% space;
     clip-path: inset(0 100% 0 0);
     animation: l1 1s steps(4) infinite;
     transition: 0.1s ease-out;
 }
 button[type="submit"]:hover .loader{
-    background: radial-gradient(circle closest-side, white 90%, #1877F2ed) 0/calc(100%/3) 100% space;
+    background: radial-gradient(circle closest-side, white 90%, #088F8Fed) 0/calc(100%/3) 100% space;
 }
 @keyframes l1 {to {clip-path: inset(0 -34% 0 0)}}
 
 /* Alert */
 .swal-button--confirm {
-    background: #1877F2;;
+    background: #088F8F;;
     color: #fff; /* White text */
 }
 
 .swal-button--confirm:hover {
-    background: #1877F2ed !important; 
+    background: #088F8Fed !important; 
 }
 
 .swal-text {
@@ -190,7 +191,7 @@ button[type="submit"]:hover .loader{
 .time {
     font-size: 4rem;
     font-weight: bold;
-    color: #1877F2;
+    color: #088F8F;
     animation: fadeIn 1s ease-in-out;
     width: 1em;
     text-align: center; 
@@ -199,7 +200,7 @@ button[type="submit"]:hover .loader{
 
 .label {
     font-size: 1.2rem;
-    color: #1877F2;
+    color: #088F8F;
     text-transform: uppercase;
 }
 
@@ -246,7 +247,7 @@ button[type="submit"]:hover .loader{
    
 }
 .cardImgContainer{
-    display:flex; justify-content: center;   background-color: #1877F2;  width: 100%; 
+    display:flex; justify-content: center;   background-color: #088F8F;  width: 100%; 
 }
 .cardImgContainer>img{
     width: 70px;
@@ -271,7 +272,7 @@ button[type="submit"]:hover .loader{
 .card h3 {
     font-size: 1.5rem;
     text-align: center;
-    color: #1877F2; /* Main color */
+    color: #088F8F; /* Main color */
   
 }
 
@@ -286,10 +287,10 @@ button[type="submit"]:hover .loader{
     width: 100%; display: flex; justify-content: center; padding:2rem;
 }
 .cta{
-    cursor: pointer; font-weight: bold; font-size: large; background-color: #1877F2; width:100%; max-width:500px; text-align: center; padding:15px 0; color:white; outline:none; border:none; transition: 0.1s ease-out;
+    cursor: pointer; font-weight: bold; font-size: large; background-color: #088F8F; width:100%; max-width:500px; text-align: center; padding:15px 0; color:white; outline:none; border:none; transition: 0.1s ease-out;
 }
 .cta:hover{
-    background-color: #1877F2ed;
+    background-color: #088F8Fed;
 }
 /*about section*/
 .aboutSection{
@@ -314,7 +315,7 @@ button[type="submit"]:hover .loader{
 .aboutInfo{
     padding: 20px;
     color:white;
-    background-color: #0d3e7d;
+    background-color: #088F8Fed;
     display: flex;
     align-items: center;
     gap: 10px;
