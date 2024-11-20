@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submitBtn.disabled = false;
     submitBtn.style.cursor = "pointer";
 
-    const eventDate = new Date("November 23, 2024 00:00:00").getTime();
+    const eventDate = new Date("November 30, 2024 00:00:00").getTime();
     const eventEndDate = eventDate + (24 * 60 * 60 * 1000);  // 24 hours after event date
 
     // Update the countdown every 1 second
