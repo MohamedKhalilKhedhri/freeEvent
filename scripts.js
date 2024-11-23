@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
-    const phoneInput = document.getElementById('phone');
+    const phoneInput = document.getElementById('phone_number');
+    const countryCodeSelect = document.getElementById('country-code');
     const nameError = document.getElementById('name-error');
     const nameLengthError = document.getElementById('name-length-error');
     const emailError = document.getElementById('email-error');
@@ -89,10 +90,9 @@ document.addEventListener("DOMContentLoaded", () => {
             isValid = false;
         }
 
-       
-        // Validate Phone number for Kuwait (8 digits)
+        // Validate Phone Number (numeric check)
         if (phoneInput.value.trim()) {
-            const phonePattern = /^\d{8}$/; // Matches exactly 8 digits
+            const phonePattern = /^\d+$/; // Matches numeric values only
             if (phonePattern.test(phoneInput.value)) {
                 phoneError.style.display = 'none';
                 phoneErrorFormat.style.display = 'none';
@@ -107,9 +107,14 @@ document.addEventListener("DOMContentLoaded", () => {
             isValid = false;
         }
 
-
         if (isValid) {
             const formData = new FormData(form);
+   
+            // Append concatenated phone number
+            const countryCode = countryCodeSelect.value;
+            const phoneNumber = phoneInput.value.trim();
+            formData.append('phone', `${countryCode}${phoneNumber}`);
+
             fetch(scriptURL, {
                 method: 'POST',
                 body: formData,
